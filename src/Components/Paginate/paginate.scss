@@ -1,0 +1,65 @@
+.paginate {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ee161e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 3px 3px 8px #151515;
+
+  button {
+    width: 100px;
+    height: 40px;
+    margin: 5px 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: #151515;
+    }
+  }
+  div {
+    padding: 0 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+}
+
+@media screen and (width < 774px) {
+  .paginate {
+    transform: translateX(-50%) scale(85%);
+
+    button {
+      font-size: 17px;
+      width: 60px;
+    }
+
+    div {
+      font-size: 17px;
+    }
+
+    .pages {
+      display: none;
+    }
+  }
+}
+
+@media screen and (width < 500px) {
+  nav {
+    .paginate {
+      transform: translateX(-50%) scale(70%);
+    }
+  }
+}

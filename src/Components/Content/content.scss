@@ -1,0 +1,16 @@
+.content {
+  max-width: 1240px;
+  margin: 150px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 70px;
+}
+
+@media screen and(max-width: 1180px) {
+  .content {
+    margin: 210px auto;
+  }
+}
