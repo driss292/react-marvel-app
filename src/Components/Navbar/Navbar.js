@@ -29,7 +29,7 @@ export default function Navbar() {
           <img src={Logo} alt="" className="navbar-logo" />
         </Link>
         <nav className="nav">
-          {(toggleMenu || largeur > 460) && (
+          {(toggleMenu || largeur > 500) && (
             <>
               <Link
                 onClick={toggleNav}

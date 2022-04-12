@@ -9,7 +9,7 @@ const Home = ({ search, setSearch }) => {
 
   useEffect(() => {
     fetchData(
-      `http://localhost:4000/characters?name=${search}&page=${page}`,
+      `https://my-express-marvel-api.herokuapp.com/characters?name=${search}&page=${page}`,
       setCharacters,
       setIsLoading
     );

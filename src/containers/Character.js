@@ -11,7 +11,7 @@ const Character = ({ setFavoritesCharacters, favoritesCharacters }) => {
 
   useEffect(() => {
     fetchData(
-      `http://localhost:4000/comics/${characterId}`,
+      `https://my-express-marvel-api.herokuapp.com/comics/${characterId}`,
       setCharacter,
       setIsLoading
     );
